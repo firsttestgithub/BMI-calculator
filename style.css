@@ -1,0 +1,112 @@
+body{
+  background-image: url("bg for calculator.jpg");
+}
+.BMI-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0px 0px 10px hsl(0,0%,73.9%);
+  padding: 3em;
+  margin: 2em;
+ 
+  height: auto;
+  background-color: white;
+ justify-content: center;
+ align-items: center;
+}
+input[type=range]{
+  border: 2.5px solid var(--vigo-color);
+  height: 1px;
+  width: 100%;
+  border-radius: 40px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none !important;
+    appearance: none;
+    background: black;
+   
+  
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2.5px solid #f09831;
+  height: 20px;
+  width: 20px;
+  border-radius: 40px;
+  background: white;
+  cursor: pointer;
+  margin-top: 0px; 
+ 
+}
+/* Hover, active & focus Thumb: Firfox */
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(111, 0, 255, 0.452)
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px brown    
+}
+input[type=number] {
+  -moz-appearance: none; /* Override default CSS styles */
+  -webkit-appearance: none;
+  cursor: pointer;
+  /* Real styling part :D */
+  background:#ebebeb;
+  border-style: none;
+  height: 30px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
+
+input[type=number]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+h1{
+font-size: 40px;
+font-weight: 700;
+text-align: center;
+}
+
+
+/*
+  Styling for "Calculate" button
+*/
+.btn {
+  text-align: center;
+  font-size: 1.4em;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 11px 32px;
+  border: none;
+  background-color:#f09831 ;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 55px
+}
+
+#result{
+  font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+.BMI-box{
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left:41% !important;
+  top:45%;
+}
+h1{
+  font-size: 31px;
+}
+}

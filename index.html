@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="BMI-box">
+        <h1> Calculate your BMI</h1>
+        <form action="" class="BMI-form" name="bmiForm">
+        <input type="range" name = "realweight" id="range"  min="0" max="180" step="1"> <br>
+        <p style="margin-top: 1.8em;">
+            WEIGHT: 
+           <input name="Teža"  value="0" id= "inputWeight" type="number">
+            
+            <span id="weight"></span> kg
+          </p>
+        <input type="range" name = "realheight" id="range1" min="0" max="250" step="1">
+        <p style="margin-top: 1.8em;">
+            HEIGHT: 
+            <input name="Teža"  value = "0" id="inputHeight" type="number">
+            <span id="weight"></span> cm
+          </p>
+          <button class="btn"  onclick="calculateBmi()" >CALCULATE</button></form>
+          <p id="result"></p>
+
+    </div>
+
+  <script src="app.js"></script>  
+</body>
+</html>
