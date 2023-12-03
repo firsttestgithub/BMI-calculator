@@ -104,13 +104,13 @@ form.addEventListener('submit',function(e){
   check.innerHTML = "<b>Your BMI is:</b> " + result1; 
 
  if(result1 <= 18.5){
-    check.innerHTML = "your bmi is within falls underweight range: " + result1;
+    check.innerHTML = "your bmi is within falls underweight range: " + "<b>" + result1+"</b>";
   }
   else if(result1 >= 18.5 && result1 <= 24.9){
-    check.innerHTML = "your bmi is within falls Healthy weight range: " + result1;
+    check.innerHTML = "your bmi is within falls Healthy weight range: " + "<b>" + result1 +"</b>";
   }
   else if(result1 >= 25.0 && result1 <= 50.9){
-    check.innerHTML = "your bmi is within falls  overweight range: " + result1;
+    check.innerHTML = "your bmi is within falls  overweight range: " + "<b>" + result1 +"</b>";
   }
 });
 }
