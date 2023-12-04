@@ -1,5 +1,8 @@
 body{
   background-image: url("bg for calculator.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .BMI-box{
   position: absolute;
@@ -99,14 +102,20 @@ text-align: center;
 }
 @media screen and (max-width: 600px) {
 .BMI-box{
-  width: 70%;
+  width: 66%;
   justify-content: center;
   align-items: center;
   position: absolute;
   left:41% !important;
   top:45%;
+
 }
 h1{
-  font-size: 31px;
+  font-size: 25px;
+}
+#result{
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
 }
 }
